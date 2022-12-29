@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: tomato; */
+    color: rgb(1, 1, 65);
+    font-size: 0.94rem;
+}
+
+.container {
+    /* border: 1px solid red; */
+    background-color: rgb(251, 176, 162);
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.container-one {
+    /* border: 1px solid blue; */
+    padding: 1rem;
+    display: flex;
+}
+
+.icon-and-name {
+    /* border: 1px solid blue; */
+    /* width: 20%; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon, .item-icon {
+    border: 3px solid black;
+    /* margin: auto; */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.icon img, .item-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.one-right {
+    border-bottom: 3px solid rgb(1, 1, 65);
+    width: 80%;
+    display: flex;
+}
+
+.one-rigth-left {
+    width: 50%;
+}
+
+.one-right-right {
+    border-left: 3px solid rgb(1, 1, 65);
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.container-two {
+    /* border: 1px solid green; */
+    padding: 1rem;
+    display: flex;
+}
+
+.two-right {
+    /* border: 1px solid blue; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.two {
+    display: flex;
+}
+
+.date {
+    /* border: 1px solid green; */
+    width: 20%;
+}
+
+.content div {
+    font-weight: bold;
+}
+
+.container-three {
+    /* border: 1px solid violet; */
+    padding: 1rem;
+    display: flex;
+}
+
+.three-right {
+    /* border: 1px solid blue; */
+    width: 80%;
+    display: flex;
+}
+
+.three-child-one {
+    border-top: 3px solid rgb(1, 1, 65);
+    border-bottom: 3px solid rgb(1, 1, 65);
+    border-right: 3px solid rgb(1, 1, 65);
+    width: 50%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.child-one-container {
+    /* border: 1px solid green; */
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.child-one-container-item {
+    /* border: 1px solid green; */
+    width: 60%;
+}
+
+.child-one-container-circle {
+    /* border: 1px solid green; */
+    width: 40%;
+    display: flex;
+}
+
+.circles {
+    /* border: 1px solid black; */
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: rgb(1, 1, 65);
+    margin: auto 0.2rem;
+}
+
+.three-child-two {
+    border-top: 3px solid rgb(1, 1, 65);
+    border-bottom: 3px solid rgb(1, 1, 65);
+    width: 50%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.child-two {
+    display: flex;
+}
+
+.child-two-date {
+    width: 15%;
+}
+
+.child-two-content div {
+    font-weight: bold;
+}
+
+.container-four {
+    /* border: 1px solid yellow; */
+    padding: 1rem;
+    display: flex;
+}
+
+.four-right {
+    /* border: 1px solid blue; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.four-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-five {
+    /* border: 1px solid magenta; */
+    padding: 1rem;
+    display: flex;
+}
+
+.five-right {
+    border-top: 3px solid rgb(1, 1, 65);
+    width: 80%;
+    padding-top: 1rem ;
+}
+
+.five-right-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.five-child {
+    /* border: 1px solid blue; */
+    display: flex;
+}
+
+.five-date {
+    width: 20%;
+}
+
+.five-content div {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-one, .container-two, .container-three, .container-four, .container-five {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-and-name {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background-color: rgba(195, 89, 89, 0.145);
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+
+    .icon-name {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .one-right, .two-right, .three-right, .four-right, .five-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .three-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three-child-one {
+        border-right: none;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .three-child-two {
+        width: 100%;
+    }
+
+    .four-items {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-name {
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .one-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one-right-right {
+        width: 100%;
+        border-left: none;
+    }
+
+    .four-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-name {
+        font-weight: bold;
+    }
+}
